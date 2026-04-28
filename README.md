@@ -5,60 +5,60 @@
 <details><summary>/all-student</summary>
 
 **Sebelum Optimasi (GUI)**
-![all-student table before](before/test_plan_1_Table.png)
-![all-student summary before](before/test_plan_1_Summary.png)
+![all-student table before](readme/before/test_plan_1_Table.png)
+![all-student summary before](readme/before/test_plan_1_Summary.png)
 
 **Sebelum Optimasi (Command Line)**
-![all-student terminal before](before/test_result_1_terminal.png)
-![all-student log before](before/test_result_1.png)
+![all-student terminal before](readme/before/test_result_1_terminal.png)
+![all-student log before](readme/before/test_result_1.png)
 
 **Sesudah Optimasi (GUI)**
-![all-student table after](after/test_plan_1_Table_after.png)
-![all-student summary after](after/test_plan_1_Summary_after.png)
+![all-student table after](readme/after/test_plan_1_Table_after.png)
+![all-student summary after](readme/after/test_plan_1_Summary_after.png)
 
 **Sesudah Optimasi (Command Line)**
-![all-student terminal after](after/test_result_1_terminal_after.png)
-![all-student log after](after/test_result_1_after.png)
+![all-student terminal after](readme/after/test_result_1_terminal_after.png)
+![all-student log after](readme/after/test_result_1_after.png)
 
 </details>
 
 <details><summary>/all-student-name</summary>
 
 **Sebelum Optimasi (GUI)**
-![all-student-name table before](before/test_plan_2_Table.png)
-![all-student-name summary before](before/test_plan_2_Summary.png)
+![all-student-name table before](readme/before/test_plan_2_Table.png)
+![all-student-name summary before](readme/before/test_plan_2_Summary.png)
 
 **Sebelum Optimasi (Command Line)**
-![all-student-name terminal before](before/test_result_2_terminal.png)
-![all-student-name log before](before/test_result_2.png)
+![all-student-name terminal before](readme/before/test_result_2_terminal.png)
+![all-student-name log before](readme/before/test_result_2.png)
 
 **Sesudah Optimasi (GUI)**
-![all-student-name table after](after/test_plan_2_Table_after.png)
-![all-student-name summary after](after/test_plan_2_Summary_after.png)
+![all-student-name table after](readme/after/test_plan_2_Table_after.png)
+![all-student-name summary after](readme/after/test_plan_2_Summary_after.png)
 
 **Sesudah Optimasi (Command Line)**
-![all-student-name terminal after](after/test_result_2_terminal_after.png)
-![all-student-name log after](after/test_result_2_after.png)
+![all-student-name terminal after](readme/after/test_result_2_terminal_after.png)
+![all-student-name log after](readme/after/test_result_2_after.png)
 
 </details>
 
 <details><summary>/highest-gpa</summary>
 
 **Sebelum Optimasi (GUI)**
-![highest-gpa table before](before/test_plan_3_Table.png)
-![highest-gpa summary before](before/test_plan_3_Summary.png)
+![highest-gpa table before](readme/before/test_plan_3_Table.png)
+![highest-gpa summary before](readme/before/test_plan_3_Summary.png)
 
 **Sebelum Optimasi (Command Line)**
-![highest-gpa terminal before](before/test_result_3_terminal.png)
-![highest-gpa log before](before/test_result_3.png)
+![highest-gpa terminal before](readme/before/test_result_3_terminal.png)
+![highest-gpa log before](readme/before/test_result_3.png)
 
 **Sesudah Optimasi (GUI)**
-![highest-gpa table after](after/test_plan_3_Table_after.png)
-![highest-gpa summary after](after/test_plan_3_Summary_after.png)
+![highest-gpa table after](readme/after/test_plan_3_Table_after.png)
+![highest-gpa summary after](readme/after/test_plan_3_Summary_after.png)
 
 **Sesudah Optimasi (Command Line)**
-![highest-gpa terminal after](after/test_result_3_terminal_after.png)
-![highest-gpa log after](after/test_result_3_after.png)
+![highest-gpa terminal after](readme/after/test_result_3_terminal_after.png)
+![highest-gpa log after](readme/after/test_result_3_after.png)
 
 </details>
 
@@ -72,10 +72,10 @@ Masalah: pola N+1 Query, setiap student melakukan query terpisah ke database unt
 Solusi: ganti dengan satu query `findAll()` langsung ke `studentCourseRepository`.
 
 **Sebelum**
-![all-student profiler before](before/all_student_before.png)
+![all-student profiler before](readme/before/all_student_before.png)
 
 **Sesudah**
-![all-student profiler after](after/all_student_after.png)
+![all-student profiler after](readme/after/all_student_after.png)
 
 </details>
 
@@ -87,10 +87,10 @@ Masalah: String concatenation (`+=`) di dalam loop yang boros memory.
 Solusi: ganti dengan `StringBuilder`.
 
 **Sebelum**
-![all-student-name profiler before](before/all_student_name_before.png)
+![all-student-name profiler before](readme/before/all_student_name_before.png)
 
 **Sesudah**
-![all-student-name profiler after](after/all_student_name_after.png)
+![all-student-name profiler after](readme/after/all_student_name_after.png)
 
 </details>
 
@@ -102,10 +102,10 @@ Masalah: manual loop untuk membandingkan GPA.
 Solusi: ganti dengan Java Stream API menggunakan `max(Comparator.comparingDouble(...))`.
 
 **Sebelum**
-![highest-gpa profiler before](before/highest_gpa_before.png)
+![highest-gpa profiler before](readme/before/highest_gpa_before.png)
 
 **Sesudah**
-![highest-gpa profiler after](after/highest_gpa_after.png)
+![highest-gpa profiler after](readme/after/highest_gpa_after.png)
 
 </details>
 
